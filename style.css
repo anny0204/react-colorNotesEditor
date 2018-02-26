@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: green;
+    text-align: center;
+}
+
+#mount_pointer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notes_app {
+    max-width: 960px;
+    width: 100%;
+}
+
+.notes_grid {
+    width: 100%;
+    margin: 5px auto;
+}
+
+.note_editor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+
+.textarea {
+    max-width: 600px;
+    width: 100%;
+    border: 1px solid green;
+    border-radius: 2px;
+}
+
+.colors_holder {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    background-color: lightgray;
+    border: 1px solid #000;
+    border-radius: 6px;
+    padding: 2px 5px;
+    margin: 5px;
+}
+
+.colors_holder ul {
+    list-style: none;
+    padding: 3px;
+    text-align: center;
+}
+
+.colors_holder ul li {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.colors_holder ul li:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5 5 rgba(0 0 0 0.2);
+}
+
+.add_button {
+    width: 150px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: green;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}
+
+.note {
+    width: 200px;
+    height: auto;
+    float: left;
+    border: 2px solid gray;
+    border-radius: 2px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    margin: 8px;
+    padding: 5px;
+}
+
+.note:hover {
+    box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.3);    
+}
+
+.note_delete {
+    color: gray;
+    position: absolute;
+    right: 6px;
+    top: 1px;
+    display: none;
+}
+
+.note_delete:hover {
+    cursor: pointer;
+}
+
+.note:hover .note_delete {
+    display: block;
+}
